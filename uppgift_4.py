@@ -1,16 +1,18 @@
-def division(äpplen,personer):
+def division(äpplen, personer):
     if personer==0:
         print("försök inte")
         return
     else:
         return int(äpplen/personer)
 
+def dela_frukter(äpplen, personer):
+    äpplen_per_person = division(äpplen, personer)
+    äpplen_kvar = äpplen % personer
+    print("äpplen per person " + str(äpplen_per_person))
+    print("äpplen kvar " + str(äpplen_kvar))
+
+
 personer=int(input("skriv in hur många personer "))
 äpplen=int(input("skriv in hur många äpplen "))
-äpplen_per_person=division(äpplen,personer)
-print("äpplen per person " + str(äpplen_per_person))
 
-utdelade_äpplen = äpplen_per_person * personer
-äpplen_kvar = äpplen % personer
-
-print("äpplen kvar " + str(äpplen_kvar))
+dela_frukter(äpplen, personer)
