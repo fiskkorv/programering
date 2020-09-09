@@ -1,3 +1,5 @@
+from random import randint
+
 def division(äpplen,personer):
     if personer==0:
         print("försök inte")
@@ -5,8 +7,10 @@ def division(äpplen,personer):
     else:
         return int(äpplen/personer)
 
-personer=int(input("skriv in hur många personer "))
-äpplen=int(input("skriv in hur många äpplen "))
+personer=int(randint(1, 10))
+print("personer " + str(personer))
+äpplen=int(randint(10, 50))
+print("äpplen " + str(äpplen))
 äpplen_per_person=division(äpplen,personer)
 print("äpplen per person " + str(äpplen_per_person))
 
