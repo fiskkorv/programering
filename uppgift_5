@@ -1,0 +1,21 @@
+import math
+
+#rektangel
+höjd=int(input("skriv in höjden "))
+bredd=int(input("skriv in bredden "))
+
+area = höjd * bredd
+omkrets = höjd * 2 + bredd * 2
+print(area)
+print(omkrets)
+
+#cirkel
+diameter=int(input("skriv in diametern "))
+
+radie = diameter / 2
+radie2 = radie * radie
+area = math.pi * radie2
+
+omkrets = diameter * math.pi
+print(omkrets)
+print(area)
